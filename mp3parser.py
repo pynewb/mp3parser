@@ -226,6 +226,17 @@ class MP3Parser(object):
 	
 	@classmethod
 	def parse_file(cls, path):
+		'''Parse the MP3 file specified by path
+
+		Args:
+			cls: The class
+
+			path: The Path
+
+		Returns:
+			An MP3File object
+		'''
+			
 		with open(path, 'rb') as f:
 			header_bytes = f.read(HEADER_SIZE)
 			header = cls.parse_header(header_bytes)
