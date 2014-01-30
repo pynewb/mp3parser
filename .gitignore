@@ -1,1 +1,4 @@
+mp3parser.html
 *.log
+*.mp3
+*.pyc
